@@ -1,0 +1,27 @@
+{
+  "name": "form-data-validate",
+  "version": "1.0.0",
+  "description": "form validation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Drulac <drulac@protonmail.com> (https://github.com/Drulac/)",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "validator": "^9.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drulac/form-data-validate.git"
+  },
+  "keywords": [
+    "data",
+    "validation"
+  ],
+  "bugs": {
+    "url": "https://github.com/Drulac/form-data-validate/issues"
+  },
+  "homepage": "https://github.com/Drulac/form-data-validate#readme"
+}
