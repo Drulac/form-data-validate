@@ -14,7 +14,7 @@ const validate = require('form-data-validate');
 const form = {
 	familyName: 'dujardin',
 	name: 'jean',
-	siret: '0000',
+	siret: '00000000000000',
 	email: 'jean.dujardin@frama.soft',
 	password: 'test'
 };
@@ -25,10 +25,10 @@ const formIsValid = validate({
 		form.familyName,
 		form.password
 	],
-	Numeric:[
+	siret:[
 		form.siret
 	],
-	Email:[
+	email:[
 		form.email
 	]
 });
@@ -38,7 +38,7 @@ const formIsValid = validate({
 
 ## Data Type
 
-This lib use [Validator](https://github.com/chriso/validator.js), so the list of data types is from [here](https://github.com/chriso/validator.js#validators), we have just add the `notEmpty` type.
+This lib use [Validator](https://github.com/chriso/validator.js), so the list of data types is from [here](https://github.com/chriso/validator.js#validators), we have just add `notEmpty`, `Siret`, `Siret` types (using [siret validator](https://github.com/steevelefort/siret)).
 
 | Validator | Description |
 | --------- | ----------- |
@@ -82,8 +82,11 @@ This lib use [Validator](https://github.com/chriso/validator.js), so the list of
 **MongoId(str)** | check if the string is a valid hex-encoded representation of a MongoDB ObjectId.
 **Multibyte(str)** | check if the string contains one or more multibyte chars.
 **Numeric(str)** | check if the string contains only numbers.
+**NotEmpty(str)** | check if the string has not a length of zero.
 **Port(str)** | check if the string is a valid port number.
 **PostalCode(str, locale)** | check if the string is a postal code,<br><br>See at bottom of this tables for `locale`.
+**Siret(str)** | check if the string is a valid SIRET number.
+**Siren(str)** | check if the string is a valid SIREN number.
 **SurrogatePair(str)** | check if the string contains any surrogate pairs chars.
 **URL(str [, options])** | check if the string is an URL.<br><br>`options` is an object which defaults to `{ protocols: ['http','https','ftp'], require_tld: true, require_protocol: false, require_host: true, require_valid_protocol: true, allow_underscores: false, host_whitelist: false, host_blacklist: false, allow_trailing_dot: false, allow_protocol_relative_urls: false }`.
 **UUID(str [, version])** | check if the string is a UUID (version 3, 4 or 5).

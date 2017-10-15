@@ -9,6 +9,7 @@
   "author": "Drulac <drulac@protonmail.com> (https://github.com/Drulac/)",
   "license": "UNLICENSED",
   "dependencies": {
+    "siret": "^1.0.1",
     "validator": "^9.0.0"
   },
   "devDependencies": {},

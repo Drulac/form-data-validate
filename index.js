@@ -1,7 +1,14 @@
 const validator = require('validator');
-validator.isNotempty = function(str)
-{
+const siret = require('siret');
+
+validator.isNotempty = function(str){
 	return !validator.isEmpty(str);
+}
+validator.isSiret = function(str){
+	return siret.isSIRET(str);
+}
+validator.isSiren = function(str){
+	return siret.isSIREN(str);
 }
 
 const Validate = function(inputs){
