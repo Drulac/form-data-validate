@@ -38,7 +38,7 @@ const formIsValid = validate({
 
 ## Data Type
 
-This lib use [Validator](https://github.com/chriso/validator.js), so the list of cdata types is from [here](https://github.com/chriso/validator.js#validators), we have just add the `notEmpty` type.
+This lib use [Validator](https://github.com/chriso/validator.js), so the list of data types is from [here](https://github.com/chriso/validator.js#validators), we have just add the `notEmpty` type.
 
 | Validator | Description |
 | --------- | ----------- |
