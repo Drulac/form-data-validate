@@ -25,7 +25,7 @@ const formIsValid = validate({
 		form.familyName,
 		form.password
 	],
-	Number:[
+	Numeric:[
 		form.siret
 	],
 	Email:[
